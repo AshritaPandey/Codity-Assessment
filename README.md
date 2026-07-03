@@ -12,11 +12,11 @@ A robust, multi-tenant distributed Job Scheduler built as a Codity Assessment su
 - **Dynamic Retry Backoffs**: Linear, Exponential, and Fixed backoff delays for transient errors.
 
 ## Documentation
-Please view the `/docs` folder for comprehensive documentation:
-- [Architecture & Diagrams](./docs/architecture.md)
-- [Entity Relationship Models](./docs/ER_DIAGRAM.md)
-- [API Documentation](./docs/API_DOCS.md)
-- [Design Decisions & Trade-offs](./docs/DESIGN_DECISIONS.md)
+Please view the `/Deliverables` folder for comprehensive documentation:
+- [Architecture & Diagrams](./Deliverables/architecture.md)
+- [Entity Relationship Models](./Deliverables/ER_DIAGRAM.md)
+- [API Documentation](./Deliverables/API_DOCS.md)
+- [Design Decisions & Trade-offs](./Deliverables/DESIGN_DECISIONS.md)
 
 ---
 
