@@ -3,8 +3,8 @@ import { LayoutDashboard, List, Activity, Settings, RefreshCw, PlayCircle, LogOu
 import { PieChart, Pie, Cell, ResponsiveContainer, Tooltip as RechartsTooltip, Legend } from 'recharts';
 import { io } from 'socket.io-client';
 
-const API_URL = 'http://localhost:4000/api';
-const SOCKET_URL = 'http://localhost:4000';
+const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:4000/api';
+const SOCKET_URL = import.meta.env.VITE_API_URL ? import.meta.env.VITE_API_URL.replace('/api', '') : 'http://localhost:4000';
 
 function App() {
   const [token, setToken] = useState(localStorage.getItem('token') || '');
