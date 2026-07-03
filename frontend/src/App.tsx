@@ -45,7 +45,7 @@ function App() {
     if (activeTab === 'dlq') fetchDlqJobs();
 
     // Polling for dashboard stats to replace the global socket emit
-    let interval: NodeJS.Timeout;
+    let interval: ReturnType<typeof setInterval>;
     if (activeTab === 'dashboard') {
       interval = setInterval(() => {
         fetchStats();
