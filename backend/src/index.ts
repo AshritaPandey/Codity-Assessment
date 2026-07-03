@@ -3,7 +3,7 @@ import app from './app';
 import { createServer } from 'http';
 import { Server } from 'socket.io';
 import { logger } from './utils/logger';
-import { connectRedis } from './utils/redis';
+// import { connectRedis } from './utils/redis';
 import prisma from './utils/prisma';
 import { WorkerService } from './services/worker.service';
 
@@ -14,7 +14,7 @@ async function startServer() {
     await prisma.$connect();
     logger.info('Connected to PostgreSQL');
 
-    await connectRedis();
+    // await connectRedis(); // Disabled for deployment since it's unused
 
     const httpServer = createServer(app);
     const io = new Server(httpServer, {
