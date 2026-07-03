@@ -29,7 +29,7 @@ The Job Scheduler is designed as a distributed, multi-tenant SaaS platform capab
 ## Architecture Diagram
 
 ```mermaid
-graph TD
+graph LR
     Client[React Frontend] -->|REST API / JWT| API[Express API Server]
     API -->|Read/Write Models| DB[(PostgreSQL Database)]
     
